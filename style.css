@@ -1,0 +1,71 @@
+body {
+  font-family: sans-serif;
+  margin: 0 50px;
+  background-color: #e5e5e5;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#tarefas {
+  text-align: center;
+  background-color: #fff;
+  width: 80%;
+  max-width: 50%;
+  /* max-height: 100%; */
+  height: auto;
+  border: 5px solid #b6a1ce;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+#addItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(182, 161, 206);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: rgb(180, 47, 200);
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#msg {
+  color: red;
+}
+
+#tarefa {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tarefa div {
+  border: 3px solid rgb(180, 47, 200);
+  background-color: #b6a1ce;
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+}
+
+#tarefa div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tarefa div .options i {
+  cursor: pointer;
+}
+
+#checkbox:checked+.texto {
+  text-decoration: line-through;
+}
