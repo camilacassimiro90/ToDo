@@ -47,10 +47,11 @@ let criarTarefas = () => {
   data.map((x, y) => {
     return (tarefa.innerHTML += `
     <div id=${y}>
-          <input type="checkbox" id="checkbox">
+          
           <span class="texto">${x.texto}</span>
           <span class="small text-secondary">${x.date}</span>
           <p>${x.price}</p>
+          
   
           <span class="options">
             
@@ -64,12 +65,13 @@ let criarTarefas = () => {
   resetarForm()
 }
 
+/* <input type="checkbox" id="checkbox"></input> */
+
 let resetarForm = () => {
   textInput.value = ''
   dateInput.value = ''
   priceInput.value = ''
 }
-
 
 let excluirTarefa = e => {
   e.parentElement.parentElement.remove()
