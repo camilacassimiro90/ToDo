@@ -2,7 +2,6 @@ body {
   font-family: sans-serif;
   margin: 0 50px;
   background-color: #e5e5e5;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,10 +11,7 @@ body {
 #tarefas {
   text-align: center;
   background-color: #fff;
-  width: 80%;
-  max-width: 50%;
-  max-height: 100%;
-  height: auto;
+  width: 30%;
   border: 5px solid #b6a1ce;
   border-radius: 8px;
   padding: 15px;

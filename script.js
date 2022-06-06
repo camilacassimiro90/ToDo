@@ -51,10 +51,8 @@ let criarTarefas = () => {
           <span class="texto">${x.texto}</span>
           <span class="small text-secondary">${x.date}</span>
           <p>${x.price}</p>
-          
-  
-          <span class="options">
             
+          <span class="options">
             <i onClick= "editarTarefa(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit"></i>
             <i onClick ="excluirTarefa(this);criarTarefas()" class="fas fa-trash-alt"></i>
           </span>
@@ -91,6 +89,7 @@ let editarTarefa = e => {
   priceInput.value = tarefaSelecionada.children[2].innerHTML
 
   excluirTarefa(e)
+  // criarTarefas(e)
 }
 
 ;(() => {
@@ -98,3 +97,11 @@ let editarTarefa = e => {
   console.log(data)
   criarTarefas()
 })()
+
+// let concluirTarefa = e => {
+//   let textInput = document.getElementById('textInput');
+//   textInput.addEventListener('click', function(ev) {
+//     if(ev.target.tagName === "SPAN")
+//   })
+
+// }
